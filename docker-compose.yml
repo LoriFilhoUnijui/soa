@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  catalogo:
+    build: ./services/catalogo
+    ports: ["8081:8080"]
+  pedidos:
+    build: ./services/pedidos
+    environment:
+      CATALOGO_BASE: http://catalogo:8080
+      NOTIF_BASE: http://notificacoes:8080
+    ports: ["8082:8080"]
+  notificacoes:
+    build: ./services/notificacoes
+    ports: ["8083:8080"]

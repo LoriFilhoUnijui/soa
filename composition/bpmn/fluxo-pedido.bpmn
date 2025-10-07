@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diagrama simples ilustrativo de orquestração: Pedido -> Catálogo -> Notificações -->
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" id="Defs">
+  <process id="Process_Pedido" isExecutable="false">
+    <startEvent id="Start" name="Novo Pedido"/>
+    <task id="T1" name="Validar Produto (Catalogo)"/>
+    <task id="T2" name="Criar Pedido"/>
+    <task id="T3" name="Enviar Notificação"/>
+    <endEvent id="End" name="Fim"/>
+  </process>
+</definitions>
