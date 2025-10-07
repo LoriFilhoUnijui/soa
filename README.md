@@ -1,4 +1,4 @@
-# cbse-soa
+# soa
 
 Sistema exemplo orientado a serviços (SOA/REST).
 
